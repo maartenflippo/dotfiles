@@ -57,6 +57,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Aliases
 alias ls='ls --color'
+alias python='python3'
 
 # Shell integrations
 eval "$(fzf --zsh)"
