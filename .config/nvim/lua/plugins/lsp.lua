@@ -201,6 +201,10 @@ return {
 			-- We do not setup RA here, because Rustaceanvim takes care of it.
 			-- rust_analyzer = {},
 
+			["ocaml-lsp"] = {},
+
+			clangd = {},
+
 			pyright = {
 				settings = {
 					pyright = {
