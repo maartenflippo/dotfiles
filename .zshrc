@@ -37,6 +37,8 @@ eval "$(oh-my-posh init --config "$HOME/.config/oh-my-posh/config.toml" zsh)"
 bindkey '^y' autosuggest-accept
 bindkey '^k' history-search-backward
 bindkey '^n' history-search-forward
+bindkey "^[[1;5C" forward-word # Ctrl right
+bindkey "^[[1;5D" backward-word # Ctrl left
 
 # History
 HISTSIZE=5000
