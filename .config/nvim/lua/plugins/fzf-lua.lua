@@ -2,7 +2,16 @@ return {
 	"ibhagwan/fzf-lua",
 	dependencies = { "echasnovski/mini.icons" },
 
-	opts = {},
+	config = function()
+		local fzf = require("fzf-lua")
+
+		-- Setup fzf-lua with your options (optional)
+		fzf.setup({})
+
+		-- Set vim.ui.select and/or vim.ui.input
+		vim.ui.select = fzf.fzf_select
+		vim.ui.input = fzf.fzf_input
+	end,
 
 	keys = {
 		{ "<leader>ff", "<CMD>FzfLua files<CR>", desc = "[F]ind in [F]iles" },
