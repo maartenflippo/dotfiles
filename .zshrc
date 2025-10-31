@@ -8,7 +8,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Source the Cargo stuff.
-. "$HOME/.cargo/env"
+[[ ! -r "$HOME/.cargo/env" ]] || . "$HOME/.cargo/env"
  
 # Setup Node Version Manager
 export NVM_DIR="$HOME/.nvm"
