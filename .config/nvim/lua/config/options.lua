@@ -48,3 +48,6 @@ vim.opt.inccommand = "split"
 
 -- Hide the cmd line if it is not in use.
 vim.opt.cmdheight = 0
+
+-- Access the system clipboard
+vim.opt.clipboard:append("unnamedplus")
