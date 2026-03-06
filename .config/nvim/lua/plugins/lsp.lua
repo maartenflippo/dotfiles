@@ -198,27 +198,9 @@ return {
 		--  - settings (table): Override the default settings passed when initializing the server.
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
-			-- We do not setup RA here, because Rustaceanvim takes care of it.
-			-- rust_analyzer = {},
-
-			["ocaml-lsp"] = {},
-
 			clangd = {},
 
-			pyright = {
-				settings = {
-					pyright = {
-						-- Using Ruff's import organizer
-						disableOrganizeImports = true,
-					},
-					python = {
-						analysis = {
-							-- Ignore all files for analysis to exclusively use Ruff for linting
-							ignore = { "*" },
-						},
-					},
-				},
-			},
+			ty = {},
 			ruff = {},
 
 			ts_ls = {},
