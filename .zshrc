@@ -67,3 +67,8 @@ alias lg='lazygit'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Deno stuff
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/maarten/.zsh/completions:"* ]]; then export FPATH="/home/maarten/.zsh/completions:$FPATH"; fi
+. "/home/maarten/.deno/env"
