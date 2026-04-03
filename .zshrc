@@ -72,3 +72,5 @@ eval "$(zoxide init --cmd cd zsh)"
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/maarten/.zsh/completions:"* ]]; then export FPATH="/home/maarten/.zsh/completions:$FPATH"; fi
 . "/home/maarten/.deno/env"
+
+export EDITOR="nvim"
