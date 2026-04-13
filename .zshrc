@@ -17,6 +17,9 @@ export NVM_DIR="$HOME/.nvm"
 
 [[ ! -r '/usr/share/nvm/init-nvm.sh' ]] || source '/usr/share/nvm/init-nvm.sh'
 
+# Force IPv4 before IPv6, since on WSL2 not doing this apparently breaks NPM.
+export NODE_OPTIONS="--dns-result-order=ipv4first"
+
 # Add in ZSH plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
