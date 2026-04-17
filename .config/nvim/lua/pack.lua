@@ -6,6 +6,7 @@ vim.pack.add {
     -- Tools
     { src = "https://github.com/neovim/nvim-lspconfig",       name = "lspconfig" },
     { src = "https://github.com/mason-org/mason.nvim",        name = "mason" },
+    { src = "https://github.com/ibhagwan/fzf-lua",            name = "fzf-lua" },
 
     -- Appearance
     { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },
@@ -17,3 +18,4 @@ vim.pack.add {
 require("plugins.mason")
 require("plugins.lualine")
 require("plugins.fidget")
+require("plugins.fzf-lua")
