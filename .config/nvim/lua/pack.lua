@@ -11,7 +11,9 @@ vim.pack.add {
     { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },
     { src = "https://github.com/catppuccin/nvim",             name = "catppuccin" },
     { src = "https://github.com/nvim-lualine/lualine.nvim",   name = "lualine" },
+    { src = "https://github.com/j-hui/fidget.nvim",           name = "fidget" },
 }
 
 require("plugins.mason")
 require("plugins.lualine")
+require("plugins.fidget")
