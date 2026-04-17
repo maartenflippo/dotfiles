@@ -4,11 +4,14 @@
 
 vim.pack.add {
     -- Tools
-    { src = "https://github.com/neovim/nvim-lspconfig", name = "lspconfig" },
-    { src = "https://github.com/mason-org/mason.nvim",  name = "mason" },
+    { src = "https://github.com/neovim/nvim-lspconfig",       name = "lspconfig" },
+    { src = "https://github.com/mason-org/mason.nvim",        name = "mason" },
 
-    -- Theme
-    { src = "https://github.com/catppuccin/nvim",       name = "catppuccin" },
+    -- Appearance
+    { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },
+    { src = "https://github.com/catppuccin/nvim",             name = "catppuccin" },
+    { src = "https://github.com/nvim-lualine/lualine.nvim",   name = "lualine" },
 }
 
 require("plugins.mason")
+require("plugins.lualine")
