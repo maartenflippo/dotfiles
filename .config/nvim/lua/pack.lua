@@ -5,6 +5,7 @@
 vim.pack.add {
     -- Tools
     { src = "https://github.com/neovim/nvim-lspconfig",       name = "lspconfig" },
+    { src = "https://github.com/saghen/blink.cmp",            name = "blink",       version = "v1.10.2" },
     { src = "https://github.com/mason-org/mason.nvim",        name = "mason" },
     { src = "https://github.com/ibhagwan/fzf-lua",            name = "fzf-lua" },
 
@@ -19,3 +20,4 @@ require("plugins.mason")
 require("plugins.lualine")
 require("plugins.fidget")
 require("plugins.fzf-lua")
+require("plugins.blink")
