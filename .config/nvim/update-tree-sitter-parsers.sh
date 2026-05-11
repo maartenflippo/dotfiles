@@ -21,5 +21,13 @@ update_parser() {
   cp queries/*.scm "$QUERY_DIR/$name/"
 }
 
+update_manual_parser() {
+  local name=$1 repo=$2
+  echo "You should update the parser for $name manually."
+  echo "  Repository: $2"
+}
+
 update_parser rust https://github.com/tree-sitter/tree-sitter-rust
 update_parser python https://github.com/tree-sitter/tree-sitter-python
+
+update_manual_parser latex https://github.com/tree-sitter/tree-sitter-latex

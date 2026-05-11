@@ -1,6 +1,7 @@
+require("lang.tex")
 require("lang.lua")
-require("lang.rust")
 require("lang.python")
+require("lang.rust")
 
 -- Format on save if an LSP is attached.
 vim.api.nvim_create_autocmd('LspAttach', {
