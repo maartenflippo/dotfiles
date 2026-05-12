@@ -8,6 +8,7 @@ vim.pack.add {
     { src = "https://github.com/saghen/blink.cmp",            name = "blink",       version = "v1.10.2" },
     { src = "https://github.com/mason-org/mason.nvim",        name = "mason" },
     { src = "https://github.com/ibhagwan/fzf-lua",            name = "fzf-lua" },
+    { src = "https://github.com/stevearc/oil.nvim",           name = "oil" },
 
     -- Appearance
     { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },
@@ -21,3 +22,4 @@ require("plugins.lualine")
 require("plugins.fidget")
 require("plugins.fzf-lua")
 require("plugins.blink")
+require("plugins.oil")
