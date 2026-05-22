@@ -1,5 +1,5 @@
 vim.api.nvim_create_autocmd('LspAttach', {
-    group = vim.api.nvim_create_augroup('my.lsp', {}),
+    group = vim.api.nvim_create_augroup('my.lsp', { clear = false }),
 
     callback = function(ev)
         -- Diagnostic Config

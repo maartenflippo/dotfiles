@@ -5,7 +5,7 @@ require("lang.rust")
 
 -- Format on save if an LSP is attached.
 vim.api.nvim_create_autocmd('LspAttach', {
-    group = vim.api.nvim_create_augroup('my.lsp', {}),
+    group = vim.api.nvim_create_augroup('my.lsp', { clear = false }),
 
     callback = function(ev)
         -- Get the `vim.lsp.Client` the event is triggered for.
