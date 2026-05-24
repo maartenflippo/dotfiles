@@ -1,8 +1,3 @@
-vim.g.mapleader = " "
-vim.g.localleader = "\\"
-
-vim.g.have_nerd_font = false
-
 -- Turn on linenumbers and make them relative.
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -13,6 +8,7 @@ vim.opt.scrolloff = 10
 
 -- Turn tabs into spaces.
 vim.opt.expandtab = true
+
 -- One tab equals 4 spaces.
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
