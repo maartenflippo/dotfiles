@@ -1,14 +1,21 @@
-local nmap = function(key, action, desc)
-    vim.keymap.set("n", key, action, { desc = desc })
+local map = function(key, action, desc, modes)
+    modes = modes or { "n" }
+    vim.keymap.set(modes, key, action, { desc = desc })
 end
 
-nmap("-", "<cmd>Explore<CR>", "Open parent directory Netrw.")
+map("-", "<cmd>Explore<CR>", "Open parent directory Netrw.")
+
+-- Navigate based on visual lines, not actual lines
+map("j", "gj", "Move down", { "n", "v" })
+map("k", "gk", "Move up", { "n", "v" })
+map("0", "g0", "Move to beginning of line", { "n", "v" })
+map("$", "g$", "Move to end of line", { "n", "v" })
 
 -- Navigate open tabs
-nmap("<C-j>", "<C-W>j", "Move pane focus down")
-nmap("<C-k>", "<C-W>k", "Move pane focus up")
-nmap("<C-h>", "<C-W>h", "Move pane focus left")
-nmap("<C-l>", "<C-W>l", "Move pane focus right")
+map("<C-j>", "<C-W>j", "Move pane focus down")
+map("<C-k>", "<C-W>k", "Move pane focus up")
+map("<C-h>", "<C-W>h", "Move pane focus left")
+map("<C-l>", "<C-W>l", "Move pane focus right")
 
 -- Commands using LSP
 vim.api.nvim_create_autocmd('LspAttach', {
