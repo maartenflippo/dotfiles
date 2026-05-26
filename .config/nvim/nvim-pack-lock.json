@@ -17,6 +17,10 @@
       "rev": "7b3a7390d01db93d422a4d6d6cf3771038577858",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
+    "lean": {
+      "rev": "8c7ea37917ac4c061a4d6a6fcefa68a42b1e150b",
+      "src": "https://github.com/Julian/lean.nvim"
+    },
     "lspconfig": {
       "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
       "src": "https://github.com/neovim/nvim-lspconfig"

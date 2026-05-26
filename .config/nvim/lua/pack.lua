@@ -9,6 +9,7 @@ vim.pack.add {
     { src = "https://github.com/mason-org/mason.nvim",        name = "mason" },
     { src = "https://github.com/ibhagwan/fzf-lua",            name = "fzf-lua" },
     { src = "https://github.com/stevearc/oil.nvim",           name = "oil" },
+    { src = "https://github.com/Julian/lean.nvim",            name = "lean" },
 
     -- Appearance
     { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },

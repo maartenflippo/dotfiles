@@ -1,0 +1,1 @@
+require("treesitter").enable("lean")
