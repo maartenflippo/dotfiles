@@ -14,7 +14,7 @@
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = import nixpkgss { inherit system };
+      pkgs = import nixpkgs { inherit system; };
     in {
       homeConfigurations = {
         maarten = home-manager.lib.homeManagerConfiguration {
