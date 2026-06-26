@@ -12,3 +12,6 @@ My dotfiles for various linux thingies.
 
 Run `home-manager switch --flake .#maarten` from inside the `home-manager/` directory.
 To get home-manager before setting it up, use `nix-shell -p home-manager`.
+
+The shell should be set to ZSH on a system level for the configuration to work.
+Otherwise, bash will remain the login shell.
