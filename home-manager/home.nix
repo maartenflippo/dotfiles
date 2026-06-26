@@ -9,6 +9,6 @@
     username = "maarten";
     homeDirectory = "/home/maarten";
 
-    stateVersion = "26.04";
+    stateVersion = "26.05";
   };
 }

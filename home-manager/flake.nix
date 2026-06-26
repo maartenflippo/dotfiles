@@ -2,10 +2,10 @@
   description = "My Home Manager configuration";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-26.04";
+    nixpkgs.url = "nixpkgs/nixos-26.05";
 
     home-manager = {
-      url = "github:nix-cummunity/home-manager/release-26.04";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
