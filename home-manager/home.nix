@@ -2,7 +2,12 @@
 {
   home = {
     packages = with pkgs; [
+      alacritty
       neovim
+      fzf
+      oh-my-posh
+      zoxide
+      lazygit
     ];
 
     # Needs to match the username
