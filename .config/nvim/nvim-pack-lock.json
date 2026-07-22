@@ -9,6 +9,10 @@
       "rev": "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "coqtail": {
+      "rev": "ff4324a5c6dbfc5c7b47ffc66e0388d959442f0f",
+      "src": "https://github.com/whonore/Coqtail"
+    },
     "fidget": {
       "rev": "889e2e96edef4e144965571d46f7a77bcc4d0ddf",
       "src": "https://github.com/j-hui/fidget.nvim"
