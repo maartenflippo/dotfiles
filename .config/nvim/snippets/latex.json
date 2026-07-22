@@ -1,0 +1,46 @@
+{
+    "newframe": {
+        "prefix": "\\beginframe",
+        "body": [
+            "\\begin{frame}{$1}",
+            "\t$0",
+            "\\end{frame}"
+        ]
+    },
+    "itemize": {
+        "prefix": "\\beginitem",
+        "body": [
+            "\\begin{itemize}",
+            "\t\\item $0",
+            "\\end{itemize}"
+        ]
+    },
+    "newdef": {
+        "prefix": "\\begindef",
+        "body": [
+            "\\begin{definition}[$1]",
+            "\t$0",
+            "\\end{definition}"
+        ]
+    },
+    "newex": {
+        "prefix": "\\beginex",
+        "body": [
+            "\\begin{example}[$1]",
+            "\t$0",
+            "\\end{example}"
+        ]
+    },
+    "newalg": {
+        "prefix": "\\beginalg",
+        "body": [
+            "\\begin{algorithm}[t]",
+            "\t\\caption{$1}",
+            "\t\\label{$2}",
+            "\t\\begin{algorithmic}[1]",
+            "\t\t$0",
+            "\t\\end{algorithmic}",
+            "\\end{algorithm}"
+        ]
+    }
+}
