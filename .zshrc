@@ -9,11 +9,16 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Source the Cargo stuff.
 [[ ! -r "$HOME/.cargo/env" ]] || . "$HOME/.cargo/env"
- 
+
 # Setup Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvm's bash_completion calls its own `compinit` internally, which prints a
+# spurious "no such file or directory" warning whenever Docker Desktop's WSL
+# integration leaves a dangling symlink at
+# /usr/share/zsh/vendor-completions/_docker. Filter out just that one line
+# rather than silencing this script's stderr wholesale.
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 2> >(grep -v 'vendor-completions/_docker' >&2)  # This loads nvm bash_completion
 
 [[ ! -r '/usr/share/nvm/init-nvm.sh' ]] || source '/usr/share/nvm/init-nvm.sh'
 
@@ -26,7 +31,12 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 
 # Load completions
-autoload -Uz compinit && compinit
+# See .zshenv for the skip_global_compinit setting that stops Ubuntu's
+# /etc/zsh/zshrc from also running its own compinit before this one. This
+# call filters out just the dangling-Docker-symlink warning (see above)
+# rather than silencing compinit's stderr wholesale, since compinit can
+# also legitimately warn about insecure completion directories.
+autoload -Uz compinit && compinit 2> >(grep -v 'vendor-completions/_docker' >&2)
 
 eval "$(oh-my-posh init --config "$HOME/.config/oh-my-posh/config.toml" zsh)"
 
