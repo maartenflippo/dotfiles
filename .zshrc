@@ -85,3 +85,5 @@ eval "$(zoxide init --cmd cd zsh)"
 [[ ! -r '/home/maarten/.deno/env' ]] || source "/home/maarten/.deno/env"
 
 export EDITOR="nvim"
+
+if [ -e /home/maarten/.nix-profile/etc/profile.d/nix.sh ]; then . /home/maarten/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
