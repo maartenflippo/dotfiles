@@ -43,5 +43,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         -- WARN: This is not Goto Declaration, this is Goto Definition.
         --  For example, in C this would take you to the source file.
         map_for_lsp("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
+
+        -- Go to implementations of the function
+        map_for_lsp("gi", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
     end,
 })
