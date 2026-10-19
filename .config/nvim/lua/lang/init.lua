@@ -1,10 +1,12 @@
-require("lang.tex")
+require("lang.bazel")
+require("lang.coq")
+require("lang.java")
+require("lang.kotlin")
+require("lang.lean")
 require("lang.lua")
 require("lang.python")
 require("lang.rust")
-require("lang.lean")
-require("lang.kotlin")
-require("lang.coq")
+require("lang.tex")
 
 -- Format on save if an LSP is attached.
 vim.api.nvim_create_autocmd('LspAttach', {

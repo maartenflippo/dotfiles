@@ -31,5 +31,6 @@ update_parser rust https://github.com/tree-sitter/tree-sitter-rust
 update_parser python https://github.com/tree-sitter/tree-sitter-python
 update_parser lean https://github.com/Julian/tree-sitter-lean
 update_parser kotlin https://github.com/fwcd/tree-sitter-kotlin
+update_parser java https://github.com/tree-sitter/tree-sitter-java
 
 update_manual_parser latex https://github.com/tree-sitter/tree-sitter-latex
