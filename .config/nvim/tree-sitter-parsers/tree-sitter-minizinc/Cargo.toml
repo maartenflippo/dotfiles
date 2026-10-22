@@ -1,0 +1,37 @@
+[package]
+authors = ["Jip J. Dekker <jip.dekker@monash.edu>"]
+autoexamples = false
+categories = ["parser-implementations", "parsing", "text-editors"]
+description = "MiniZinc grammar for tree-sitter"
+edition = "2021"
+keywords = ["incremental", "parsing", "tree-sitter", "minizinc"]
+license = "MPL-2.0"
+name = "tree-sitter-minizinc"
+readme = "README.md"
+repository = { workspace = true }
+version = "0.1.0"
+
+build = "bindings/rust/build.rs"
+include = [
+  "README.md",
+  "bindings/rust/*",
+  "bindings/rust/wasm-include/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+  "tree-sitter.json",
+  "/LICENSE",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter-language = {workspace = true}
+
+[build-dependencies]
+cc = "1.2"
+serde_json = "1.0.149"
+
+[dev-dependencies]
+tree-sitter = {workspace = true}
