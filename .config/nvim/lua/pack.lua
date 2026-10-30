@@ -10,6 +10,8 @@ vim.pack.add {
     { src = "https://github.com/ibhagwan/fzf-lua",            name = "fzf-lua" },
     { src = "https://github.com/stevearc/oil.nvim",           name = "oil" },
     { src = "https://github.com/Julian/lean.nvim",            name = "lean" },
+    { src = "https://github.com/nvim-lua/plenary.nvim",       name = "plenary" },
+    { src = "https://github.com/scalameta/nvim-metals",       name = "metals" },
 
     -- Appearance
     { src = "https://github.com/nvim-tree/nvim-web-devicons", name = "web-devicons" },
