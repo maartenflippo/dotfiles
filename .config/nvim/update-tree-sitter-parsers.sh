@@ -50,6 +50,7 @@ update_parser lean https://github.com/Julian/tree-sitter-lean
 update_parser kotlin https://github.com/fwcd/tree-sitter-kotlin
 update_parser java https://github.com/tree-sitter/tree-sitter-java
 update_parser wgsl https://github.com/szebniok/tree-sitter-wgsl
+update_parser flatbuffers https://github.com/smpanaro/tree-sitter-flatbuffers
 
 update_local_parser minizinc
 update_local_parser datazinc

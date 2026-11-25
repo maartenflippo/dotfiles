@@ -1,5 +1,6 @@
 require("lang.bazel")
 require("lang.coq")
+require("lang.flatbuffers")
 require("lang.java")
 require("lang.kotlin")
 require("lang.lean")
